@@ -1,0 +1,41 @@
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-1;
+}
+
+.address-title {
+  font-style: normal;
+  width: calc((100% - 3 * 30px) / 4);
+  line-height: 21px;
+  margin-top: 20px;
+  margin-right: 70px;
+}
+
+.address-link {
+  color: $white;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+.contacts-position {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.contacts-link {
+  color: $gray;
+  text-decoration: none;
+}
+
+.join {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}

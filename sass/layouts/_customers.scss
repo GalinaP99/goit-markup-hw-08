@@ -1,0 +1,27 @@
+.link-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+&:focus {
+  border: 1px solid $active;
+}
+  &:hover .logo-icon,
+&:focus .logo-icon {
+  fill: $active;
+}
+}
+
+.logo-icon {
+  fill: #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
