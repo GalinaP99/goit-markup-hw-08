@@ -1,3 +1,9 @@
+.doing {
+  @include for-size(desktop-only) {
+    display: none;
+  }
+}
+
 .thumb {
   position: relative;
 

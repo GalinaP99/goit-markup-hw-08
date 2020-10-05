@@ -6,13 +6,15 @@
 
 &-title {
   color: $dark-color;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+   @include font(28px, 33px, 700);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   margin-top: 0px;
+  @include for-size(desktop) {
+     font-size: 36px;
+  line-height: 42px;
+  }
 }
 
 &-item {

@@ -42,8 +42,10 @@
   }
 
   .icon-container {
-    margin-bottom: 30px;
-    margin-left: 32px;
+    display: flex;
+    justify-content: center;
+    /*margin-bottom: 30px;
+    margin-left: 32px;*/
   }
 
 

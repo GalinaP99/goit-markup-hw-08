@@ -32,12 +32,21 @@ ul {
   color: $dark-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  @include for-size(mobile-only) {
+     font-size: 18px;
+  line-height: 21px;
+  }
 
 
 &.contacts {
   display: flex;
   align-items: center;
   color: $main-color;
+  /* @include for-size(tablet)*/
+  @media screen and (min-width: 768px) and (max-width: 1199px)  {
+     font-size: 12px;
+  line-height: 14px;
+  }
   
   &:hover .logo-info,
 &:focus .logo-info {
@@ -87,14 +96,13 @@ ul {
 
   @include for-size(desktop) {
     width: 1200px;
-    padding-left: 40px;
-    padding-right: 40px;
+
   }
 }
 
 .flexbox {
   @include for-size(tablet) {
-   // display: flex;
+    display: flex;
      /*justify-content: space-between;*/
   }
 }
