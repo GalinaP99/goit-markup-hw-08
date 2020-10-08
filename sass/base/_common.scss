@@ -103,6 +103,7 @@ ul {
 .flexbox {
   @include for-size(tablet) {
     display: flex;
+    flex-wrap: wrap;
      /*justify-content: space-between;*/
   }
 }
@@ -113,6 +114,25 @@ img {
   height: auto;
 }
 
-.item:not(:last-child) {
-  margin-right: 30px;
+.content-box {
+   width: 100%;
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+    margin-right: 30px;
+  margin-bottom: 30px;
+    &:nth-child(2n) {
+  margin-right: 0;
+}
+
+   &:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+}
+
+  @include for-size(desktop) {
+  width: calc((100% - 3 * 30px) / 4);
+  &:not(:last-child) {
+  margin-right: 30px; 
+  } 
+  }
 }

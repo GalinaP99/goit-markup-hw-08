@@ -1,4 +1,5 @@
 .footer-section {
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $background-1;
@@ -6,10 +7,14 @@
 
 .address-title {
   font-style: normal;
+  
+  @include for-size(desktop) {
   width: calc((100% - 3 * 30px) / 4);
+  margin-right: 70px;
+  }
   line-height: 21px;
   margin-top: 20px;
-  margin-right: 70px;
+  
 }
 
 .address-link {
@@ -19,8 +24,12 @@
 }
 
 .contacts-position {
+   margin-top: 8px;
+  margin-bottom: 8px;
+   @include for-size(desktop) {
   margin-top: 9px;
   margin-bottom: 9px;
+   }
 }
 
 .contacts-link {
@@ -37,5 +46,8 @@
   text-transform: uppercase;
   color: $white;
   margin-bottom: 20px;
+  margin-top: 60px;
+    @include for-size(desktop) {
   margin-top: -20px;
+    }
 }

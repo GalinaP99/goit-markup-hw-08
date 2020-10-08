@@ -1,19 +1,24 @@
 
 
 .section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+   @include for-size(desktop) {
   padding-top: 94px;
   padding-bottom: 94px;
+   }
 
 &-title {
   color: $dark-color;
    @include font(28px, 33px, 700);
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+ margin-bottom: 30px;
   margin-top: 0px;
   @include for-size(desktop) {
      font-size: 36px;
   line-height: 42px;
+   margin-bottom: 50px;
   }
 }
 
@@ -26,6 +31,9 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   margin-top: 0px;
+   @include for-size(mobile-only) {
+  text-align: center; 
+  }
 }
 
 }
