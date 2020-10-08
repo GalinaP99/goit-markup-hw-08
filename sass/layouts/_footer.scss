@@ -1,15 +1,30 @@
 .footer-section {
-  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $background-1;
+  @include for-size(desktop-only) {
+     display: flex;
+      justify-content: space-between;
+   text-align: center;
+    margin-right: auto;
+  margin-left: auto;
+  }
 }
+
+.footer-info {
+   @include for-size(tablet) {
+    
+      margin-right: 165px;
+ 
+}
+}
+
+
 
 .address-title {
   font-style: normal;
-  
   @include for-size(desktop) {
-  width: calc((100% - 3 * 30px) / 4);
+  /*width: calc((100% - 3 * 30px) / 4);*/
   margin-right: 70px;
   }
   line-height: 21px;
@@ -46,8 +61,11 @@
   text-transform: uppercase;
   color: $white;
   margin-bottom: 20px;
-  margin-top: 60px;
+
+   @include for-size(tablet-only) {
+     margin-top: 60px;
+   }
     @include for-size(desktop) {
-  margin-top: -20px;
+ margin-top: 10px;
     }
 }

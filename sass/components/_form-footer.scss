@@ -15,11 +15,25 @@
   border-radius: 4px;
   background-color: transparent;
   width: 100%;
-  @include for-size(desktop) {
-  width: 358px;
-  }
   height: 50px;
   padding-left: 16px;
   margin-bottom: 20px;
+  margin-right: 12px;
+   @include for-size(tablet) {
+  width: 450px;
+  }
+  @include for-size(desktop) {
+  width: 358px;
+  }
+  
 }
 
+.btn.send {
+  padding-top: 10px;
+  padding-right: 62px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  background-image: url(../svg/icon.send.svg);
+  background-repeat: no-repeat;
+  background-position: right 28px bottom 13px;
+}

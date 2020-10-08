@@ -15,18 +15,6 @@
   padding: 10px 32px;
 }
 
-&.send {
-  padding-top: 10px;
-  padding-right: 62px;
-  padding-bottom: 10px;
-  padding-left: 29px;
-   @include for-size(desktop) {
-  margin-left: 12px;
-  }
-  background-image: url(../svg/icon.send.svg);
-  background-repeat: no-repeat;
-  background-position: right 28px bottom 13px;
-}
 
 }
 
