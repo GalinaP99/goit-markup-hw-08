@@ -1,4 +1,7 @@
 .navigation-wrap {
+   @include for-size(tablet-only) {
+     display: none;
+   }
     //display: none;
  /* @include for-size(mobile-only) {
     display: flex;
