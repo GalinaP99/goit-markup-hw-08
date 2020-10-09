@@ -6,12 +6,13 @@
 
 .thumb {
   position: relative;
+
    &:not(:last-child) {
   margin-right: 30px; 
   } 
 
 
-& > .label {
+  & > .label {
   position: absolute;
   width: 100%;
   height: 70px;
