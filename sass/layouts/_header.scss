@@ -1,7 +1,39 @@
 
 .page-header {
+   @include for-size(only-tablet) {
+     display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+   @include for-size(tablet) {
   justify-content: flex-end;
   align-items: center;
   padding-bottom: 32px;
   padding-top: 32px;
+   }
 }
+
+ .menu-button {
+    
+  display: inline-block;
+  margin: 0px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  @include for-size(tablet) {  
+    display: none;
+  }
+
+  & .icon-cross {
+    display: none;
+     } 
+
+    &.icon-cross .is-open {
+      display: block;
+    }  
+
+  &.icon-burger .is-open {
+    display: none;
+  }
+}
+ 

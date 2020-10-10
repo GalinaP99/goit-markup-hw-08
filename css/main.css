@@ -8,7 +8,6 @@ html {
 *::before {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  outline: 2px solid red;
 }
 
 body {
@@ -690,28 +689,66 @@ img {
     right: -100%;
     opacity: 0;
     height: 100vh;
-    padding: 118px 40px;
-    background-color: white;
+    
     z-index: 5;
     transition: 1s linear;
   }*/
 }
 
+.navigation-wrap .is-open {
+  display: block;
+}
+
 @media (max-width: 767px) {
   .navigation-wrap {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 60px 151px;
+    background-color: white;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+}
+
+.menu-button {
+  display: inline-block;
+  margin: 0px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .menu-button {
     display: none;
   }
 }
 
-.page-header {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 32px;
-  padding-top: 32px;
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.icon-cross .is-open {
+  display: block;
+}
+
+.menu-button.icon-burger .is-open {
+  display: none;
 }
 
 .section-hero {
@@ -750,6 +787,7 @@ img {
 
 @media (min-width: 1200px) {
   .section-hero {
+    max-width: 1600px;
     padding-bottom: 200px;
     padding-top: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/desktop/img.jpg);
