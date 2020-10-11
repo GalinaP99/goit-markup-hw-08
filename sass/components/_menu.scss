@@ -1,12 +1,16 @@
 .nav {
+   @include for-size(desktop) { 
   align-items: center;
   margin-right: auto;
 }
-
+}
 .contacts-info {
+  @include for-size(desktop) {  
   align-items: center;
 }
-
+}
 .menu-nav:not(:last-child) {
+   @include for-size(desktop) {  
   margin-right: 50px;
+   }
 }

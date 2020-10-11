@@ -13,18 +13,20 @@
 
 .footer-info {
    @include for-size(tablet) {
-    
       margin-right: 165px;
- 
+      margin-left: 76px;
+   }
+       @include for-size(desktop) {
+         margin-right: 16px;
+         margin-left: 0px;
+         flex-shrink: 0;
+       }
 }
-}
-
-
 
 .address-title {
   font-style: normal;
   @include for-size(desktop) {
-  /*width: calc((100% - 3 * 30px) / 4);*/
+  
   margin-right: 70px;
   }
   line-height: 21px;
@@ -64,6 +66,9 @@
 
    @include for-size(tablet-only) {
      margin-top: 60px;
+   }
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+     
    }
     @include for-size(desktop) {
  margin-top: 10px;

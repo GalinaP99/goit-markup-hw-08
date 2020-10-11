@@ -11,7 +11,9 @@
 
 &-title {
   color: $black;
+  @include for-size(desktop) {
   margin-right: 93px;
+  }
 }
 
 &-title-2 {

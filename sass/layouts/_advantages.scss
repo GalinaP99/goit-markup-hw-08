@@ -1,5 +1,7 @@
 .our-adv {
+  @include for-size(desktop) {
   padding-bottom: 0px;
+  }
 }
 
 .list-adv {
@@ -33,6 +35,9 @@
 }
 
 .description {
+   @include for-size(tablet-only) {
+   margin-bottom: 30px;
+  }
   margin: 0px;
 }
 
