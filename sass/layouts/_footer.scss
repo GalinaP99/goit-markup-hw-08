@@ -17,7 +17,7 @@
       margin-left: 76px;
    }
        @include for-size(desktop) {
-         margin-right: 16px;
+         margin-right: 0px;
          margin-left: 0px;
          flex-shrink: 0;
        }

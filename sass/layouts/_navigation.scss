@@ -3,7 +3,6 @@
      align-items: center;
       @include for-size(tablet-only) {
     justify-content: space-between;
-    
    } 
 }
 
@@ -42,10 +41,6 @@
    @include for-size(tablet-only) {
   display: none;
    }
-   @include for-size(tablet) {
-   display: flex;
-     align-items: center;  
-   }
 
   &.is-open {
      display: flex;
@@ -67,34 +62,37 @@
       @include for-size(tablet-only) {
      margin-top: 52px;
      margin-bottom: 40px;
-
+     }
    &-em {
+      @include for-size(tablet-only) {
    margin-top: 60px;
    margin-bottom: 16px;
+      }
+   @include for-size(tablet) {
+  margin-bottom: 10px; 
+  margin-top: 0px;
+  }
    @include for-size(desktop) {
+     margin-bottom: 0px;
      margin-top: 0px;
-   margin-bottom: 0px;
+     margin-right: 30px;
   
-   }
    }
   }
 }
    .contacts-info {
+     display: flex;
      @include for-size(desktop-only) {
-    flex-direction: column;
-    
-  @include for-size(desktop) {
-    display: flex;
-    justify-content: center;
-     align-items: center;
-     text-align: center;
-     margin-left: 305px;
-  }
+    flex-direction: column; 
      }
+  @include for-size(tablet) {
+    justify-content: flex-start;
+     margin-left: 80px; 
+  }
+  @include for-size(desktop) {
+    flex-direction: row;
+        margin-left: 305px;
 }
+     }
 
-.data {
- @include for-size(tablet) {
-        margin-right: 84px;
-}
-}
+

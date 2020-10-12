@@ -1,13 +1,13 @@
 
 .page-header {
+  @include for-size(tablet-only) {
     padding-bottom: 10px;
   padding-top: 10px;
   position: relative;
-
+  }
   
    @include for-size(tablet) {
-  
-  justify-content: flex-end;
+ justify-content: flex-end;
   align-items: center;
   padding-bottom: 32px;
   padding-top: 32px;

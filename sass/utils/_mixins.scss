@@ -30,7 +30,7 @@
       @content;
     }
      } @else if $range ==  desktop-only {
-    @media (max-width: #{$desktop}) {
+    @media (max-width: #{$desktop - 1}) {
       @content;
     }
   }

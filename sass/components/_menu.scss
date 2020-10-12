@@ -1,16 +1,19 @@
 .nav {
-   @include for-size(desktop) { 
+   @include for-size(tablet) { 
+     justify-content: flex-end;
   align-items: center;
   margin-right: auto;
 }
 }
 .contacts-info {
-  @include for-size(desktop) {  
+   @include for-size(tablet-only) {
   align-items: center;
+   }
+   
 }
-}
+
 .menu-nav:not(:last-child) {
-   @include for-size(desktop) {  
+   @include for-size(tablet) {  
   margin-right: 50px;
    }
 }
