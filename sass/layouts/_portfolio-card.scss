@@ -16,7 +16,7 @@
   
   &:not(:last-child) {
      @include for-size(tablet-only) {
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
   }
   
@@ -74,12 +74,24 @@
   font-size: 18px;
   line-height: 28px;
   color: $white;
-  padding: 63px 24px;
+  padding: 77px 24px;
   margin: 0;
+  @media screen and (max-width: 350px){
+    font-size: 14px;
+  line-height: 24px;
+  padding: 24px 24px;
+  }
+  @media screen and (max-width: 420px){
+    padding: 18px 24px;
+  }
+
+  @include for-size(tablet) {
+    padding: 49px 24px;
+}
+ @include for-size(desktop) {
+    padding: 63px 24px;
 }
 }
-
-
 }
 
 .title-position {
@@ -101,5 +113,6 @@
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
-  margin: 0;
+  margin: 0px;
+}
 }

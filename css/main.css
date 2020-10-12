@@ -1345,7 +1345,7 @@ img {
 
 @media (max-width: 767px) {
   .card-item:not(:last-child) {
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -1410,15 +1410,41 @@ img {
   font-size: 18px;
   line-height: 28px;
   color: #fff;
-  padding: 63px 24px;
+  padding: 77px 24px;
   margin: 0;
 }
 
-.title-position {
+@media screen and (max-width: 350px) {
+  .card-overlay > p {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 24px 24px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .card-overlay > p {
+    padding: 18px 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-overlay > p {
+    padding: 49px 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-overlay > p {
+    padding: 63px 24px;
+  }
+}
+
+.card .title-position {
   padding: 20px 24px;
 }
 
-.portfolio-title {
+.card .portfolio-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
@@ -1428,11 +1454,11 @@ img {
   margin-top: 0;
 }
 
-.portfolio-description {
+.card .portfolio-description {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
-  margin: 0;
+  margin: 0px;
 }
 /*# sourceMappingURL=main.css.map */
